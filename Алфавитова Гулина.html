@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+  body {
+    background: url(1.jpg) no-repeat;
+    -moz-background-size: 100%;
+    -webkit-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+    
+     }
+</style>
+    
+  <meta charset="UTF-8">
+   <title>Алфавитова Гулина </title>
+   <p><h1><img src="IMG-20220119-WA0019.jpg" align="right"width="250px" height="300px"><img src="IMG-20220119-WA0018.jpg" align="left" width="250px" height="300px"><div class="type-write">
+
+     <div class="type-write">
+     <div class="button">
+       <button onclick="typewrite()">Нажми на кнопку</button>
+     </div>
+     <p id="passage"><span>Биография........</span> </p>
+  </div>
+
+
+
+  <script>
+
+    var Type=0;
+    var text="Алфавитова Гулина Бердибековна родилась 9 июня 2000году.Гулина такая добрая,веселая,милая,нежная  девушка.Так сказать она дуща компании..Когда у кого-то нету настроение,умеет поднимать,когда кому-то грустно,старается этого человека развлечь.Одним словом,она вообще крутая девушка.С ней не скучно,она не такая, как другие девушки...Очень хорошо пишет стихи,хорошо поет,умеет общаться с людьми:)Такие девушки как она,думаю на этой планете очень мало)Её воспитание на высшем уровне.Боится обидеть кого-то.Никогда невидела когда она кому-то кричала.Все преподаватели любят ее зато что,она такая добрая.И еще Гулина гостеприимная"
+
+    var typing_speed = 10;
+    function typewrite(){
+      if (Type < text.length) {
+        document.getElementById("passage").innerHTML += text.charAt(Type);
+        Type++;
+        setTimeout(typewrite,typing_speed);
+
+      }
+    }
+  </script>
+</h1></p>
+  <center> <img src="IMG-20220119-WA0013.jpg" width="250px" height="300px">
+   <img src="IMG-20220119-WA0009.jpg" width="250px" height="300px">
+   <img src="IMG-20220119-WA0010.jpg" width="250px" height="300px"></center>
+   
+   <style>
+  body {
+    background: url(1.jpg) no-repeat;
+    -moz-background-size: 100%;
+    -webkit-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+    
+     }
+</style>
+</head>
+<body>
+  <style>
+.btn {
+  background-color: DodgerBlue;
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/* Более темный фон при наведении курсора мыши */
+.btn:hover {
+  background-color: RoyalBlue;
+}
+</style>
+</head>
+<body>
+<h1>Стиль кнопки загрузки</h1>
+
+<p>Автоматическая ширина:</p>
+<button class="btn"><i class="fa fa-download"></i> Скачать</button>
+
+<p>Полная ширина:</p>
+<button class="btn" style="width:100%"><i class="fa fa-download"></i> Скачать</button>
+
+</body>
+</html>
+
